@@ -1,7 +1,3 @@
-const express = require('express');
-
-const app = express();
-
 function sseDemo(req, res) {
     let messageId = 0;
 
@@ -27,5 +23,3 @@ app.get('/event-stream', (req, res) => {
 
     sseDemo(req, res);
 });
-
-app.listen(3000);
